@@ -29,6 +29,15 @@ h2 {
     font-size: 4rem;
 }
 
+.arrow {
+    width: auto;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    margin-left: -56px;
+    cursor: pointer;
+}
+
 img {
     width: 100%;
     border-radius: 2rem;
@@ -377,10 +386,41 @@ th {
         font-size: 1rem;
         text-align: center
     }
+
+    .layout {
+        display: grid;
+        grid-template-columns: .5 repeat(3, 1.2fr) .5;
+        grid-template-rows: .5fr auto .5fr .3fr .5fr .3fr .5fr .3fr;
+        justify-items: stretch;
+        grid-column-gap: 1rem;
+    }
+
+    .layout__first {
+        grid-column: 1/7;
+        grid-row: 3/4;
+        align-self: stretch;
+    }
+    
+    .layout__second {
+        grid-column: 1/7;
+        grid-row: 5/6;
+        align-self: stretch;
+    }
+    
+    .layout__third {
+        grid-column: 1/7;
+        grid-row: 7/8;
+        align-self: stretch;
+    }
+
+    .layout__footer {
+        /* background-color: #aaa; */
+        grid-column: 1/7;
+        grid-row: 9/10;
+    }
   }
   
   @media screen and (max-width: 768px) {
-    .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
       right: 0;
@@ -391,21 +431,6 @@ th {
       display: block;
       text-align: left;
     }
-
-    /* .layout__first {
-        grid-column: 1/6;
-        grid-row: 3/4;
-    }
-
-    .layout__second {
-        grid-column: 1/6;
-        grid-row: 5/6;
-    }
-
-    .layout__third {
-        grid-column: 1/6;
-        grid-row: 7/8;
-    } */
   }
 
 .topnav .icon {
@@ -453,6 +478,10 @@ th {
 
 .textAbout {
     font-size: 1.5rem;
+}
+
+.imageTeams {
+    /* width: 100%; */
 }
 
 .student {

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Projekt</title>
@@ -15,9 +16,9 @@
         <div class="player atletico">
             <header>
                 <nav class="topnav" id="myTopnav">
-                    <a href="/index.html">Úvod</a>
-                    <a class="moveToSection" href="/players.html">Hráči</a>
-                    <a href="/teams.html">Týmy</a>
+                    <a href="index.html">Úvod</a>
+                    <a class="moveToSection" href="players.html">Hráči</a>
+                    <a href="teams.html">Týmy</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction(this)">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
@@ -25,12 +26,18 @@
                     </a>
                 </nav>
             </header>
-            
+
             <div class="flex-grid player">
                 <h1 class="col-4">Antoine Griezmann</h1>
             </div>
 
-            <div class="flex-grid">
+            <a class="button">
+                <svg id="more-arrows" class="arrow">
+                    <polygon points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 " />
+                </svg>
+            </a>
+
+            <div class="flex-grid mainSection">
                 <div class="col-2 col-md-4 imagePlayer">
                     <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2018/06/14/15290033549023.jpg" alt="griezmann">
                     <!-- <img src="https://i.pinimg.com/736x/84/fe/3b/84fe3b1a9ea6006052362cbbbc6b1150.jpg" alt="modric"> -->
@@ -51,13 +58,13 @@
                 </div>
             </div>
             <footer>
-                    <div class="footer">
-                        <a href="/about.html">O nás</a>
-                        <p>Web splňuje podmínky metodiky BliendFriendly 2.3</p>
-                    </div>
-                </footer>
+                <div class="footer">
+                    <a href="about.html">O nás</a>
+                    <p>Web splňuje podmínky metodiky BliendFriendly 2.3</p>
+                </div>
+            </footer>
         </div>
-        
+
     </main>
     <script src="main.js"></script>
 
